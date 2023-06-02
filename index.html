@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Formulir Pendaftaran</h2>
+    <hr>
+    <form id="myForm">
+        <label for="fullname">Full Name*:</label>
+        <input type="text" id="fullname" placeholder="Masukan Nama Lengkap" required>
+
+        <label for="email">Email*:</label>
+        <input type="email" id="email" placeholder="Masukan email" required>
+
+        <label for="phone">Phone Number*:</label>
+        <input type="tel" id="phone" placeholder="Masukan Nomor Telepon" required>
+
+        <label for="vacancy">Vacancy*:</label>
+        <select id="vacancy" required>
+            <option value="" selected disabled>Pilih Lowongan</option>
+        </select>
+
+        <label for="position">Position*:</label>
+        <select id="position" required>
+            <option value="" selected disabled>Pilih Posisi</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" id="submitBtn">Kirim</button>
+        <hr>
+    </form>
+
+    <div id="result" style="margin-top: 20px;"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
